@@ -12,6 +12,8 @@ class Calculator{
         this.currentOperationText = currentOperationText;
         this.currentOperation = "";
     }
+
+
     
     //show in calculator screen
     showDigit(digit){
@@ -27,6 +29,8 @@ class Calculator{
 
     //process the calculator operations
     processOperation(operation){ 
+        //check If Current Is Empty
+        
         //get current an previous values
         let operationValue;
         const previous = +this.previusOperationText.innerText.split(" ")[0];
